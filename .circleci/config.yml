@@ -3,7 +3,7 @@ version: 2.1
 executors:
   custom-node:
     docker:
-      - image: cimg/node
+      - image: cimg/node:current
 
 commands:
   generatelogs:
