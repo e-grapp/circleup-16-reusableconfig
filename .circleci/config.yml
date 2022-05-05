@@ -28,6 +28,7 @@ jobs:
     executor: custom-node
     steps:
       - run: echo "console.log('complete')" | node
+      - run: mkdir -p ~/randomfolder
       - generatelogs
       - run:
           name: Check for logs - DO NOT MODIFY
